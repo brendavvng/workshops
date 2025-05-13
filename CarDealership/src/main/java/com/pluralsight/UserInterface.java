@@ -16,7 +16,7 @@ public class UserInterface {
     private static void init() {
 
     }
-    
+
 
     public static void processGetByPriceRequest() {
 
