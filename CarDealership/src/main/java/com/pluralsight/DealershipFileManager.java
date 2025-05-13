@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import java.io.*;
+import java.util.ArrayList;
+
 public class DealershipFileManager {
 
     // creating the file path for loading and reading data
@@ -8,10 +11,9 @@ public class DealershipFileManager {
     // creating getDealership method
     public Dealership getDealership() {
 
-
     }
 
-    public void saveDealership(Dealership) {
+    public void saveDealership(Dealership dealership) {
 
     }
 
