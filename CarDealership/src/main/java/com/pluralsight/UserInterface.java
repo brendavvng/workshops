@@ -1,60 +1,70 @@
 package com.pluralsight;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class UserInterface {
 
-    private static Dealership dealership;
+    private Dealership dealership;
+    private Scanner theScanner;
+
+
 
     // creating constructor
-    public UserInterface() {
-    }
-
-    public static void display() {
-    }
-
-    private static void init() {
-
+    private UserInterface() {
+        // initializing scanner to read user input
+        Scanner theScanner = new Scanner(System.in);
     }
 
 
-    public static void processGetByPriceRequest() {
+    private void init() {
+        DealershipFileManager dfm = new DealershipFileManager();
+        dealership = dfm.getDealership();
+    }
+
+    public void display() {
+        // loads the dealership from file
+        init();
+    }
+
+
+    private void processGetByPriceRequest() {
 
     }
 
-    public static void processGetByMakeModelRequest() {
+    public void processGetByMakeModelRequest() {
 
     }
 
-    public static void processGetByYearRequest() {
+    public void processGetByYearRequest() {
 
     }
 
-    public static void processGetByColorRequest() {
+    public void processGetByColorRequest() {
 
     }
 
-    public static void processGetByMileageRequest() {
+    public void processGetByMileageRequest() {
 
     }
 
-    public static void processGetByVehicleTypeRequest() {
+    public void processGetByVehicleTypeRequest() {
 
     }
 
-    public static void processGetAllVehiclesRequest() {
+    public void processGetAllVehiclesRequest() {
 
     }
 
-    public static void processAddVehiclesRequest() {
+    public void processAddVehiclesRequest() {
 
     }
 
-    public static void processRemoveVehicleRequest() {
+    public void processRemoveVehicleRequest() {
 
     }
 
-    private static void displayVehicles() {
+    private void displayVehicles(ArrayList<Vehicle> vehicles) {
 
     }
 

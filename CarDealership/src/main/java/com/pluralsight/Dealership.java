@@ -7,7 +7,6 @@ public class Dealership {
     private String name;
     private String address;
     private String phone;
-
     private ArrayList<Vehicle> inventory;
 
     // creating constructors
@@ -19,35 +18,51 @@ public class Dealership {
         this.inventory = new ArrayList<Vehicle>();
     }
 
+    // getters for properties
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Vehicle> getInventory() {
+        return inventory;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 
     // get vehicles by price (min & max)
-    public ArrayList<Vehicle> getVehiclesByPrice() {
+    public ArrayList<Vehicle> getVehiclesByPrice(double min, double max) {
 
     }
 
     // get vehicles by make & model
-    public ArrayList<Vehicle> getVehiclesByMakeModel() {
+    public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model) {
 
     }
 
     // get vehicles by the year (min & max)
-    public ArrayList<Vehicle> getVehiclesByYear() {
+    public ArrayList<Vehicle> getVehiclesByYear(int min, int max) {
 
     }
 
     // get vehicles by color
-    public ArrayList<Vehicle> getVehiclesByColor() {
+    public ArrayList<Vehicle> getVehiclesByColor(String color) {
 
     }
 
 
     // get vehicles by mileage (min & max)
-    public ArrayList<Vehicle> getVehiclesByMileage() {
+    public ArrayList<Vehicle> getVehiclesByMileage(int min, int max) {
 
     }
 
     // car, truck, SUV, van
-    public ArrayList<Vehicle> getVehiclesByType() {
+    public ArrayList<Vehicle> getVehiclesByType(String type) {
 
     }
 
@@ -56,13 +71,17 @@ public class Dealership {
         return inventory();
     }
 
+    private ArrayList<Vehicle> inventory() {
+        return null;
+    }
+
     // creating addVehicle method, adds vehicle to list
-    public void addVehicle() {
+    public void addVehicle(Vehicle vehicle) {
 
     }
 
     // removes vehicle
-    public void removeVehicle() {
+    public void removeVehicle(int vin) {
 
     }
 }
