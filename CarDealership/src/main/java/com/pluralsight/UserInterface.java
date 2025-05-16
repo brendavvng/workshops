@@ -27,7 +27,7 @@ public class UserInterface {
         while (isRunning) {
             // ﾟ･:.｡:ﾟ･♡
             // printing out menu
-            System.out.println("           ‧˚₊•┈┈┈┈┈Welcome!┈┈┈┈┈•‧₊˚⊹");
+            System.out.println("            ‧˚₊•┈┈┈┈┈Welcome!┈┈┈┈┈•‧₊˚⊹");
             System.out.println("⁺˚*•̩̩͙*˚⁺‧͙⁺˚*•̩̩Dealership Menu: ͙*˚⁺‧͙⁺˚*•̩̩͙*˚⁺‧͙  ");
             System.out.println("1.  °∘\uD83D\uDCAE∘° Find vehicles within a price range ﾟ･♡");
             System.out.println("2.  °∘\uD83D\uDCAE∘° Find vehicles by make / model ﾟ･♡");
@@ -201,6 +201,8 @@ public class UserInterface {
         // creating and adding vehicle
         Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, odometer, price);
         dealership.addVehicle(vehicle);
+        DealershipFileManager dfManager = new DealershipFileManager();
+        dfManager.saveDealership(dealership);
         System.out.println(" °∘\uD83D\uDCAE∘° Vehicle added. ");
 
     }
@@ -210,6 +212,8 @@ public class UserInterface {
         int vin = Integer.parseInt(theScanner.nextLine());
 
         dealership.removeVehicle(vin);
+        DealershipFileManager dfManager = new DealershipFileManager();
+        dfManager.saveDealership(dealership);
         System.out.println("Vehicle has been removed.");
 
     }
