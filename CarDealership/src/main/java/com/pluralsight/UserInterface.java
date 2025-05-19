@@ -27,7 +27,7 @@ public class UserInterface {
         while (isRunning) {
             // ﾟ･:.｡:ﾟ･♡
             // printing out menu
-            System.out.println("            ‧˚₊•┈┈┈┈┈Welcome!┈┈┈┈┈•‧₊˚⊹");
+            System.out.println("\n            ‧˚₊•┈┈┈┈┈Welcome!┈┈┈┈┈•‧₊˚⊹");
             System.out.println("⁺˚*•̩̩͙*˚⁺‧͙⁺˚*•̩̩Dealership Menu: ͙*˚⁺‧͙⁺˚*•̩̩͙*˚⁺‧͙  ");
             System.out.println("1.  °∘\uD83D\uDCAE∘° Find vehicles within a price range ﾟ･♡");
             System.out.println("2.  °∘\uD83D\uDCAE∘° Find vehicles by make / model ﾟ･♡");

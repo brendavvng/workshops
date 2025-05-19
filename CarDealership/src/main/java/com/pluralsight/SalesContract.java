@@ -71,7 +71,7 @@ public class SalesContract extends Contract {
         double rate;
         int months;
 
-        //Processing fee ($295 for vehicles under $10,000 and $495 for all others
+        // processing fee - $295 for vehicles under $10,000 and $495 for all others
         if (getVehicleSold().getPrice() >= 10000) {
             // 4.25 annual rate
             rate = 0.0425;
